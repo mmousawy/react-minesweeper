@@ -1,0 +1,22 @@
+button {
+  appearance: none;
+  display: inline-block;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  border-width: .125em;
+  background-color: #BDBDBD;
+  border-top-color: rgba(255, 255, 255, .8);
+  border-left-color: rgba(255, 255, 255, .8);
+  border-bottom-color: rgba(0, 0, 0, .4);
+  border-right-color: rgba(0, 0, 0, .4);
+  outline: none;
+}
+
+button:active {
+  border-bottom-color: rgba(255, 255, 255, .8);
+  border-right-color: rgba(255, 255, 255, .8);
+  border-top-color: rgba(0, 0, 0, .4);
+  border-left-color: rgba(0, 0, 0, .4);
+}

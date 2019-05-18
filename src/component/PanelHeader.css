@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'digital';
+  src: url('../fonts/lcd.woff2') format('woff2');
+}
+
+.component-panel-header {
+  border: .25rem solid;
+  border-bottom-color: rgba(255, 255, 255, .8);
+  border-right-color: rgba(255, 255, 255, .8);
+  border-top-color: rgba(0, 0, 0, .4);
+  border-left-color: rgba(0, 0, 0, .4);
+  margin-bottom: 1rem;
+  padding: .25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.component-panel-header button {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.component-panel-header .input {
+  text-align: center;
+  appearance: none;
+  padding: .2rem .125rem .125rem .225rem;
+  border: 0;
+  background-color: #000;
+  color: #ff0000;
+  font-family: 'digital';
+  font-size: 2.25rem;
+}
+
+.game-button {
+  font-size: 1.5rem;
+  line-height: 0;
+}
+
+.game-button--default::before {
+  content: '🙂'
+}
+
+.game-button--oh::before {
+  content: '😮'
+}
+
+.game-button--dead::before {
+  content: '😵'
+}
