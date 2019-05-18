@@ -8,7 +8,7 @@ export default class PanelHeader extends React.Component {
       'game-button',
       {
         'game-button--default': this.props.emojiState === 'default',
-        'game-button--oh': this.props.emojiState === 'oh',
+        'game-button--exclaim': this.props.emojiState === 'exclaim',
         'game-button--dead': this.props.emojiState === 'dead'
       }
     );

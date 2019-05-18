@@ -41,7 +41,7 @@
   content: '🙂'
 }
 
-.game-button--oh::before {
+.game-button--exclaim::before {
   content: '😮'
 }
 

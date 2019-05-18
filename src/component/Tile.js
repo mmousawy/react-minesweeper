@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import pure from 'recompose/pure';
 import './Tile.css';
 
-export default class Tile extends React.Component {
+class Tile extends React.Component {
   static propTypes = {
     clickHandler: PropTypes.func,
     mouseDownHandler: PropTypes.func,
@@ -22,8 +23,12 @@ export default class Tile extends React.Component {
   };
 
   render() {
+    console.log('rendering tile');
+
     return (
       <button onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp}>{this.props.defaultValue}</button>
     )
   };
 }
+
+export default pure(Tile);

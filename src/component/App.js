@@ -6,7 +6,7 @@ import './App.css';
 export default class App extends React.Component {
   state = {
     playing: true,
-    difficulty: 'beginner',
+    difficulty: 'expert',
     difficulties: {
       beginner: {
         field: [8, 8],
@@ -27,7 +27,7 @@ export default class App extends React.Component {
 
   handleMouseDown = () => {
     this.setState({
-      emojiState: 'oh'
+      emojiState: 'exclaim'
     });
   };
 

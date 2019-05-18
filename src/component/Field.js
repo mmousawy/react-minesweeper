@@ -1,9 +1,10 @@
 import React from 'react';
-import Tile from './Tile';
-import './Field.css';
 import PropTypes from 'prop-types';
+import pure from 'recompose/pure';
+import './Field.css';
+import Tile from './Tile';
 
-export default class Field extends React.Component {
+class Field extends React.Component {
   static propTypes = {
     clickHandler: PropTypes.func,
     mouseDownHandler: PropTypes.func,
@@ -23,6 +24,7 @@ export default class Field extends React.Component {
   };
 
   render() {
+    console.log('rendering field');
     const rows = [];
 
     for (let y = 0; y < this.props.options.field[1]; y++) {
@@ -40,3 +42,5 @@ export default class Field extends React.Component {
     );
   }
 }
+
+export default pure(Field);
