@@ -23,8 +23,6 @@ class Tile extends React.Component {
   };
 
   render() {
-    console.log('rendering tile');
-
     return (
       <button onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp}>{this.props.defaultValue}</button>
     )

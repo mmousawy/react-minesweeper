@@ -10,7 +10,7 @@
   border-top-color: rgba(0, 0, 0, .4);
   border-left-color: rgba(0, 0, 0, .4);
   margin-bottom: 1rem;
-  padding: .25rem;
+  padding: .25rem .5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,12 +24,17 @@
 .component-panel-header .input {
   text-align: center;
   appearance: none;
-  padding: .2rem .125rem .125rem .225rem;
+  padding: .15rem .125rem .125rem .225rem;
   border: 0;
   background-color: #000;
   color: #ff0000;
   font-family: 'digital';
   font-size: 2.25rem;
+  border: 1px solid;
+  border-bottom-color: rgba(255, 255, 255, .9);
+  border-right-color: rgba(255, 255, 255, .9);
+  border-top-color: #717171;
+  border-left-color: #717171;
 }
 
 .game-button {

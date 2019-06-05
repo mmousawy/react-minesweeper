@@ -6,7 +6,7 @@ import './App.css';
 export default class App extends React.Component {
   state = {
     playing: true,
-    difficulty: 'expert',
+    difficulty: 'beginner',
     difficulties: {
       beginner: {
         field: [8, 8],
@@ -17,7 +17,7 @@ export default class App extends React.Component {
         mines: 40
       },
       expert: {
-        field: [24, 24],
+        field: [30, 15],
         mines: 99
       }
     },
@@ -43,7 +43,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" onMouseUp={this.handleMouseUp}>
         <main>
           <PanelHeader options={this.state.difficulties[this.state.difficulty]} timer={this.state.timer} emojiState={this.state.emojiState}></PanelHeader>
           <Field options={this.state.difficulties[this.state.difficulty]} mouseDownHandler={this.handleMouseDown} mouseUpHandler={this.handleMouseUp}></Field>

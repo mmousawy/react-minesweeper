@@ -1,10 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #008080;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  height: 100%;
+}
+
 main {
   display: inline-block;
-  background-color: #BDBDBD;
+  margin: auto;
   padding: 1rem;
   border: .25rem solid;
   border-top-color: rgba(255, 255, 255, .8);
   border-left-color: rgba(255, 255, 255, .8);
   border-bottom-color: rgba(0, 0, 0, .4);
   border-right-color: rgba(0, 0, 0, .4);
+  background-color: #BDBDBD;
 }

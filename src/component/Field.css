@@ -5,3 +5,7 @@
   border-top-color: rgba(0, 0, 0, .4);
   border-left-color: rgba(0, 0, 0, .4);
 }
+
+.component-field div {
+  display: flex;
+}
